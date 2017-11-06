@@ -1,0 +1,23 @@
+
+1.使用application.yml 
+	注意冒号要有空格-------（port: 8081）
+
+2.命令行运行
+    先 mvn install 
+    再 java -jar target/girl-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+
+
+3.注解
+	@Entity------对应数据库字段
+
+	@RestController----控制器
+
+	@Autowired-----引用
+
+	@GetMapping，@PostMapping、、、、@PathVariable，
+
+	@GetMapping(value = "/girls/{id}")
+
+	@PathVariable("id") Integer id
+	
+	@RequestParam(value = "id",required = false,defaultValue = "0") Integer id
